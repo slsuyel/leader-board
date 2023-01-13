@@ -189,3 +189,40 @@ height: 104px;
     font-size: 12px;
 }
 
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    hr,  .players-section, .latest-courses
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-players, .top-blogs, .blogs, .all-courses{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap:0px
+    }
+    .player{
+        justify-items: center;
+    }
+    
+    .section-title {
+        text-align: center;
+        background: #a09ea7;
+        margin-bottom: 34px;
+    }
+    .top-players {
+        margin-left: 0;
+        background: #ececec;
+        border-radius: 22px;
+        padding: 5px 27px;
+    }
+    .courses-info {
+        display: flex;
+        margin-bottom: 21px;
+        margin-top: -23px;
+    }
+  
+  }
